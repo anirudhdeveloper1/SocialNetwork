@@ -15,13 +15,14 @@ export const appRoutes: Routes = [
     runGuardsAndResolvers: 'always',
     canActivate: [AuthGuard],
     children: [
+      { path: 'member-list', component: MemberListComponent },
       { path: 'friends', component: FriendsListComponent },
       { path: 'messages', component: MessagesComponent },
-      { path: 'lists', component: ListsComponent },
-      { path: 'member-list', component: MemberListComponent}
+      { path: 'lists', component: ListsComponent }
+
     ]
   },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' }
+  { path: '**', redirectTo: '', pathMatch: 'full' }
   // Below is another way to delaring route guards: 
   //{ path: 'friends', component: FriendsListComponent },
   //{ path: 'messages', component: MessagesComponent },
