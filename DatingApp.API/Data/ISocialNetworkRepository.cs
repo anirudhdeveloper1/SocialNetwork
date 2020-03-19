@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DatingApp.Api.Data
 {
-    interface ISocialNetworkRepository
+    public interface ISocialNetworkRepository
     {
         void Add<T>(T entity) where T : class;
         void Delete<T>(T entity) where T : class;

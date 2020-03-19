@@ -15,6 +15,9 @@ import { FriendsListComponent } from './friends-list/friends-list.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
+import { MemberListComponent } from '../members/member-list/member-list.component';
+import { MemberCardComponent } from './members/member-card/member-card.component';
+
 
 
 
@@ -26,7 +29,9 @@ import { appRoutes } from './routes';
     RegisterComponent,
     FriendsListComponent,
     ListsComponent,
-    MessagesComponent
+    MessagesComponent,
+    MemberListComponent,
+    MemberCardComponent
   ],
   imports: [
     BrowserModule,

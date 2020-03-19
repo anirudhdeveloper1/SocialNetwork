@@ -4,6 +4,9 @@ import { FriendsListComponent } from './friends-list/friends-list.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ListsComponent } from './lists/lists.component';
 import { AuthGuard } from './_guards/auth.guard';
+import { MemberListComponent } from './members/member-list/member-list.component';
+
+
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,7 +17,8 @@ export const appRoutes: Routes = [
     children: [
       { path: 'friends', component: FriendsListComponent },
       { path: 'messages', component: MessagesComponent },
-      { path: 'lists', component: ListsComponent }
+      { path: 'lists', component: ListsComponent },
+      { path: 'member-list', component: MemberListComponent}
     ]
   },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
