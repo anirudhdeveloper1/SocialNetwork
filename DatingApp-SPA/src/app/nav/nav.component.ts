@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
   model: any = {};
-
+  //counter : number =  42;
 
   constructor(public authService: AuthService, private alertify: AlertifyService, private router: Router) { }
 
@@ -27,6 +27,10 @@ export class NavComponent implements OnInit {
         this.router.navigate(['/members'])
       });
   }
+
+  //incrementCounter(): void {
+  //  this.counter++;
+  //}
 
   loggedIn() {
     return this.authService.loggedIn();
